@@ -1,0 +1,47 @@
+/shelf/
+/workspace.xml
+.git
+.idea
+out
+*.iml
+.settings
+.metadata
+.project
+.classpath
+.checkstyle
+bin
+target
+.pmd
+.ruleset
+rebel.xml
+ruleset.xml
+.springBeans
+eclipsebin
+.eclipse-pmd
+.buildpath
+.externalToolBuilders
+
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.cmd
+*.mvn
+mvnw
+*.DS_Store

@@ -29,6 +29,5 @@ public class Task02 {
             min = c;
         }
         System.out.println(max - min);
-
     }
 }

@@ -2,6 +2,10 @@ package com.example.cousre.topic02;
 
 public class Task37_45_ExonNames {
 
+    public static void main(String[] args) {
+        System.out.println(new Task37_45_ExonNames().makeFullName("Nazar", "Bratyshchenko"));
+    }
+
     //    TASK37
     public boolean areNamesEqual(String name1, String name2) {
         return name1.equals(name2);
@@ -9,10 +13,9 @@ public class Task37_45_ExonNames {
 
     //   TASK 38
     public String makeFullName(String firstName, String lastName) {
-        String name = firstName.toLowerCase();
-        String lastNam = lastName.toUpperCase();
-        String fullName = name + " " + lastNam;
-        return fullName;
+        firstName = firstName.toLowerCase();
+        lastName = lastName.toUpperCase();
+        return firstName + " " + lastName;
     }
 
     //    TASK39
@@ -74,5 +77,4 @@ public class Task37_45_ExonNames {
             return name.substring(0, halfLength);
         }
     }
-
 }

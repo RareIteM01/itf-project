@@ -20,9 +20,9 @@ public class Task37_45_ExonNames {
 
     //    TASK39
     public boolean isNameLucky(String name) {
-        if (name.contains("a")) {
+        if (name.contains("a") || name.contains("A")) {
             return true;
-        } else if (name.contains("o")) {
+        } else if (name.contains("o") || name.contains("O")) {
             return true;
         } else {
             return false;
@@ -62,9 +62,8 @@ public class Task37_45_ExonNames {
 
     //    TASK44
     public String makeNameClean(String name) {
-        String nameStrip = name.trim();
-        String cleanName = "CLEAN" + nameStrip + "CLEAN";
-        return cleanName;
+        name = name.trim();
+        return "CLEAN" + name + "CLEAN";
     }
 
     //    TASK45

@@ -3,7 +3,9 @@ package com.example.cousre.topic02;
 public class Task37_45_ExonNames {
 
     public static void main(String[] args) {
-        System.out.println(new Task37_45_ExonNames().makeFullName("Nazar", "Bratyshchenko"));
+//        System.out.println(new Task37_45_ExonNames().makeFullName("Nazar", "Bratyshchenko"));
+        System.out.println(new Task37_45_ExonNames().getNameCode(null));
+
     }
 
     //    TASK37
@@ -20,25 +22,21 @@ public class Task37_45_ExonNames {
 
     //    TASK39
     public boolean isNameLucky(String name) {
-        if (name.contains("a") || name.contains("A")) {
-            return true;
-        } else if (name.contains("o") || name.contains("O")) {
-            return true;
-        } else {
-            return false;
-        }
+        return (name.contains("a") || name.contains("A") || name.contains("o") || name.contains("O"));
     }
 
     //    TASK 40
     public String getNameCode(String name) {
+        if(name == null || name.length() == 0){
+            return "";
+        }
         String firstLetter = String.valueOf(name.charAt(0)).toUpperCase();
-        String lastLetter = String.valueOf(name.charAt(name.length() - 1)).toUpperCase();
-        String fullName = firstLetter + lastLetter;
         if (name.length() == 1) {
             return firstLetter;
-        } else {
-            return fullName;
         }
+        String lastLetter = String.valueOf(name.charAt(name.length() - 1)).toUpperCase();
+        return firstLetter + lastLetter;
+
     }
 
     //    TASK 41

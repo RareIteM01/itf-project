@@ -8,7 +8,8 @@ public class PassportFormCreator_Task04 {
         String name = scanner.nextLine();
         String surname = scanner.nextLine();
         int years = scanner.nextInt();
-        System.out.println(name + " " + surname + " " + (years *= 10));
+        years *= 10;
+        System.out.println(name + " " + surname + " " + years);
         System.out.println(name.toUpperCase());
         System.out.println(surname.toUpperCase());
         System.out.println(years);

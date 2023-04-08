@@ -7,12 +7,12 @@ public class PassportFormCreator_Task04 {
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
         String surname = scanner.nextLine();
-        int years = scanner.nextInt();
-        years *= 10;
-        System.out.println(name + " " + surname + " " + years);
+        int earthYears = scanner.nextInt();
+        int moonMonths = earthYears * 10;
+        System.out.println(name + " " + surname + " " + moonMonths);
         System.out.println(name.toUpperCase());
         System.out.println(surname.toUpperCase());
-        System.out.println(years);
+        System.out.println(moonMonths);
         scanner.close();
     }
 }

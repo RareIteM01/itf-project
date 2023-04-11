@@ -21,8 +21,7 @@ public class Task {
         }
         do {
             System.out.println("Iterations" + index++);
-        }
-        while (index < 3);
+        } while (index < 3);
 //        Task04
         Scanner scanner = new Scanner(System.in);
         int day = scanner.nextInt();

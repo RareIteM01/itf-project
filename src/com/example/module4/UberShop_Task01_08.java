@@ -1,8 +1,19 @@
 package com.example.module4;
 
-public class UberShop_Task01_08 {
+import java.util.Arrays;
 
-//    Task01
+public class UberShop_Task01_08 {
+    public static void main(String[] args) {
+        UberShop_Task01_08 uberShop_task01_08 = new UberShop_Task01_08();
+        System.out.println(Arrays.toString(uberShop_task01_08.mergeStocks(new String[]{"1", "2"}, new String[]{"3", "4", "5"})));
+        int[] array = {1, 2, 3};
+        for (int i = 0; i < array.length; i++) {
+            array[i] += 1000;
+        }
+        System.out.println(Arrays.toString(array));
+    }
+
+    //    Task01
     public void printPrices(float[] prices) {
         for (float price : prices) {
             System.out.println(price + " jup.");
@@ -73,7 +84,7 @@ public class UberShop_Task01_08 {
         return result;
     }
 
-//    Task05
+    //    Task05
     public int[] removePrice(int[] prices, int toRemove) {
         int toRemoveCount = 0;
         for (int price : prices) {
@@ -94,7 +105,7 @@ public class UberShop_Task01_08 {
         return result;
     }
 
-//    Task06
+    //    Task06
     public int[] leavePrice9(int[] prices) {
         int validPriceCount = 0;
         for (int price : prices) {
@@ -115,25 +126,24 @@ public class UberShop_Task01_08 {
         return result;
     }
 
-//    Task07
+    //    Task07
     public String[] mergeStocks(String[] showcaseStocks, String[] warehouseStocks) {
         String[] result = new String[showcaseStocks.length + warehouseStocks.length];
 
-        int index = 0;
-        for (String stock : showcaseStocks) {
-            result[index] = stock;
-            index++;
+        for (int i = 0; i < showcaseStocks.length; i++) {
+            result[i] = showcaseStocks[i];
         }
 
-        for (String stock : warehouseStocks) {
-            result[index] = stock;
-            index++;
+        for (int i = 0; i < warehouseStocks.length; i++) {
+//            2 3
+            result[showcaseStocks.length + i] = warehouseStocks[i];
+            System.out.println(result[warehouseStocks.length]);
         }
 
         return result;
     }
 
-//    Task08
+    //    Task08
     public int getPricesSum(int[] prices, int minPrice, int maxPrice) {
         int sum = 0;
         for (int price : prices) {

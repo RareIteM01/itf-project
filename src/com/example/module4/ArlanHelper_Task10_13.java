@@ -1,7 +1,6 @@
 package com.example.module4;
 
 public class ArlanHelper_Task10_13 {
-
     //    Task10
     public String drawQuad(int n) {
         String result = "";

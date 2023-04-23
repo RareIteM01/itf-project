@@ -74,14 +74,14 @@ public class UberShop_Task01_08 {
             }
         }
 
-        int result = 0;
+        int minPriceCount = 0;
         for (int i = 0; i < prices.length; i++) {
             if (prices[i] == min) {
-                result++;
+                minPriceCount++;
             }
         }
 
-        return result;
+        return minPriceCount;
     }
 
     //    Task05
@@ -129,13 +129,11 @@ public class UberShop_Task01_08 {
     //    Task07
     public String[] mergeStocks(String[] showcaseStocks, String[] warehouseStocks) {
         String[] result = new String[showcaseStocks.length + warehouseStocks.length];
-
         for (int i = 0; i < showcaseStocks.length; i++) {
             result[i] = showcaseStocks[i];
         }
 
         for (int i = 0; i < warehouseStocks.length; i++) {
-//            2 3
             result[showcaseStocks.length + i] = warehouseStocks[i];
             System.out.println(result[warehouseStocks.length]);
         }

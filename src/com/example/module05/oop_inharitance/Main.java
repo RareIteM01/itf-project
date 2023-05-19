@@ -1,4 +1,4 @@
-package com.example.module05;
+package com.example.module05.oop_inharitance;
 
 abstract class Animal {
     public abstract void say();

@@ -1,4 +1,5 @@
-package com.example.module09_generics_collections;
+package com.example.module09_generics_collections.my_LinkedList;
+
 
 public class MainLinkedList {
     public static void main(String[] args) {
